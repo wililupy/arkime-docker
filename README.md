@@ -19,7 +19,7 @@ Once build is complete, you need to provide the path for the ```config.ini``` an
 through to the Container using the ```--volume``` flag and pointing it to the ```/data/config``` path in the container which is a 
 Symbolic Link into the Arkime Working Directory /etc. I recommend pulling the ```/opt/arkime/etc/``` directory from your running Arkime Host
 and copying that to the _local config path_ on the host and modifying the ```config.ini``` for the specific host. I have included an example
-```config.ini``` that works for my systems.
+```config.ini``` that works for my systems in the ```data/``` directory. Other required files for starting Arkime are there as well for proper operations. It can be used as an example for how to use the volumes in the Arkime container.
 
 It also requires you to increase the default memlock ulimit so it uses the ```--ulimit``` variable to max it out. 
 
