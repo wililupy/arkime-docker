@@ -18,7 +18,8 @@ If you need a different version or want to have a different OS Base, change thos
 Once build is complete, you need to provide the path for the ```config.ini``` and other prerequisite configs. This can be passed 
 through to the Container using the ```--volume``` flag and pointing it to the ```/data/config``` path in the container which is a 
 Symbolic Link into the Arkime Working Directory /etc. I recommend pulling the ```/opt/arkime/etc/``` directory from your running Arkime Host
-and copying that to the _local config path_ on the host and modifying the ```config.ini``` for the specific host.
+and copying that to the _local config path_ on the host and modifying the ```config.ini``` for the specific host. I have included an example
+```config.ini``` that works for my systems.
 
 It also requires you to increase the default memlock ulimit so it uses the ```--ulimit``` variable to max it out. 
 
